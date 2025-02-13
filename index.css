@@ -5,7 +5,6 @@ body {
     text-align: center;
     background: linear-gradient(to right, #ff9966, #ff5e62);
     color: white;
-    display: flex;
 }
 
 header {
@@ -13,47 +12,30 @@ header {
     color: white;
     padding: 20px;
     text-transform: uppercase;
-    width: 100%;
-    text-align: center;
 }
 
-.side-nav {
-    position: fixed;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 200px;
-    background: rgba(0, 0, 0, 0.8);
-    padding-top: 60px;
-}
-
-.side-nav ul {
+nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
 }
 
-.side-nav ul li {
-    margin: 20px 0;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.side-nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
-    display: block;
-    padding: 10px;
 }
 
-.side-nav ul li a:hover {
-    background: #ffdd57;
-    color: black;
-    border-radius: 5px;
+nav ul li a:hover {
+    color: #ffdd57;
 }
 
-main {
-    flex-grow: 1;
+section {
     padding: 50px;
     max-width: 800px;
     margin: auto;
@@ -61,18 +43,21 @@ main {
     border-radius: 10px;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
 }
 
-.project {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     margin-bottom: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.project:hover {
-    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer {
